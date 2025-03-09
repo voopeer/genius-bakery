@@ -1,0 +1,20 @@
+@import './utils/variables';
+@import './utils/texts';
+@import './utils/utils';
+@import './base';
+
+@import './components/section';
+@import './components/buttons';
+@import './components/links';
+@import './components/input';
+
+@import './layout/header';
+@import './layout/hero-section';
+@import './layout/advantages-section';
+@import './layout/traditions-section';
+@import './layout/chefs-section';
+@import './layout/formats-section';
+@import './layout/contacts-section';
+@import './layout/form-terms';
+@import './layout/footer';
+@import './layout/backdrop';

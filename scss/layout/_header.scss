@@ -1,0 +1,64 @@
+.header {
+
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 32px;
+
+        &__container {
+    
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        
+        }
+
+        &__nav {
+
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+        }
+
+        &__menu {
+
+            display: flex;
+            gap: 64px;
+            flex-grow: 1;
+            justify-content: center;
+
+        }
+
+
+    .modal-btn-open {
+
+        padding: 16px 32px;
+        background-color: var(--color-brand-normal);
+        border: 2px solid var(--color-brand-normal);
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+        color: var(--color-primary-light);
+        transition: all 0.2s ease;
+
+        &:hover {
+
+            background-color: var(--color-primary-light);
+            border: 2px solid var(--color-brand-normal);
+            color: var(--color-brand-dark);
+
+        }
+
+        &:active {
+
+            color: black;
+            border: 2px solid black;
+
+        }
+
+    }
+
+}
