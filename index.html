@@ -29,7 +29,14 @@
               <li><a class="link" href="#contacts-section">Контакти</a></li>
             </ul>
           </nav>
-          <button class="modal-btn-open" type="button">Замовити дзвінок</button>
+          <button class="header__button modal-btn-open btn" type="button">
+            Замовити дзвінок
+          </button>
+          <button class="header__burger" type="button">
+            <svg width="24px" height="24px">
+              <use href="./img/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -312,51 +319,72 @@
             </div>
             <ul>
               <li>
-                <a class="link" href="#traditions-section">Наші традиції</a>
+                <a class="footer-nav__section link" href="#traditions-section"
+                  >Наші традиції
+                </a>
               </li>
-              <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
-              <li><a class="link" href="#formats-section">Формати</a></li>
-              <li><a class="link" href="#contacts-section">Контакти</a></li>
+              <li>
+                <a class="footer-nav__section link" href="#chefs-section"
+                  >Шеф-кухарі
+                </a>
+              </li>
+              <li>
+                <a class="footer-nav__section link" href="#formats-section"
+                  >Формати
+                </a>
+              </li>
+              <li>
+                <a
+                  class="footer-nav__section footer-nav__contact-section link"
+                  href="#contacts-section"
+                  >Контакти
+                </a>
+              </li>
             </ul>
           </nav>
           <address class="footer__address">
             <ul>
               <li>
-                <a class="address__link" href="tel:+380960000007">
+                <a class="address__link link" href="tel:+380960000007">
                   + 38 (096) 000 00 07
                 </a>
               </li>
               <li>
-                <a class="address__link" href="mailto:shopbakery@gmail.com">
+                <a
+                  class="address__link link"
+                  href="mailto:shopbakery@gmail.com"
+                >
                   shopbakery@gmail.com
                 </a>
               </li>
               <li>
                 <a
-                  class="address__link"
+                  class="address__link link"
                   href="https://g.co/kgs/zQ9JaUY"
                   target="_blank"
                 >
                   Україна, м. Київ, вул. Січових Стрільців 54
                 </a>
               </li>
-              <li>
-                <a href="#">
-                  <svg class="address-icon" width="32px" height="32px">
-                    <use href="./img/icons.svg#fb-icon"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="address-icon" width="32px" height="32px">
-                    <use href="./img/icons.svg#insta-icon"></use>
-                  </svg>
-                </a>
-              </li>
+              <div class="social-icons">
+                <li>
+                  <a href="#">
+                    <svg class="address-icon link" width="32px" height="32px">
+                      <use href="./img/icons.svg#fb-icon"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg class="address-icon" width="32px" height="32px">
+                      <use href="./img/icons.svg#insta-icon"></use>
+                    </svg>
+                  </a>
+                </li>
+              </div>
             </ul>
             <div class="address__info">
-              <a class="address__link" href="#" target="_blank"
+              <a class="address__link link" href="#" target="_blank"
                 >Політика конфіденційності
               </a>
               <p class="address__copyright">&copy; 2022 Дані захищені</p>
@@ -401,7 +429,7 @@
               placeholder="Телефон"
               minlength="10"
               maxlength="13"
-              pattern="^\+[0-9] {12}"
+              pattern="^\+[0-9]{12}"
               required
             />
             <label class="input__label vissualy-hidden" for="user-tel">
@@ -438,5 +466,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/scroll.js"></script>
   </body>
 </html>

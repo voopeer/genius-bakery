@@ -8,6 +8,18 @@
     background-size: cover;
     background-repeat: no-repeat;
 
+    &-nav__section {
+
+        margin-bottom: 16px;
+
+    }
+
+    &-nav__contact-section {
+
+        margin-bottom: 0;
+
+    }
+
     &__nav {
     
         flex-basis: 50%;
@@ -43,17 +55,9 @@
 
         ul {
 
-            flex-basis: 50%;
+            flex-basis: 60%;
 
         }
-
-        .address-info {
-
-            flex-basis: 50%;
-
-        }
-
-    
 
     }
 
@@ -101,6 +105,7 @@
     &-icon {
 
         fill: var(--color-primary-light);
+        transition: fill .3s;
 
         &:hover {
 
@@ -116,13 +121,21 @@
         font-weight: 300;
         color: var(--color-primary-light);
         text-decoration: none;
-    
+        margin-bottom: 16px;
+
         &:hover {
     
             color: var(--color-brand-normal);
     
         }
     
+    }
+
+    &__info {
+
+        flex-basis: 50%;
+        text-align: right;
+
     }
 
 }
