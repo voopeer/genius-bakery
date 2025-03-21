@@ -2,18 +2,30 @@
 
     &__title {
 
-        margin: 0 auto 80px;
+        margin: 0 auto 24px;
         position: relative;
+
+        @media screen and (min-width: $bp-desktop) {
+        
+            margin-bottom: 80px;
+    
+        }
 
         &::after,
         &::before {
 
-            display: block;
+            display: none;
             position: absolute;
             width: 352px;
             bottom: 24px;
             border: 2px solid var(--color-brand-light);
             content: '';
+
+            @media screen and (min-width: $bp-desktop) {
+            
+                display: block;
+        
+            }
 
         }
 
@@ -34,52 +46,88 @@
     &__list {
 
         display: flex;
-        gap: 40px 30px;
-        flex-wrap: wrap;
+        gap: 20px;
+        flex-direction: column;
+        
+
+        @media screen and (min-width: $bp-tablet) {
+        
+            gap: 40px 30px;
+            flex-wrap: wrap;
+            flex-direction: row;
+    
+        }
 
     }
 
     &__item {
 
-        flex-basis: calc((100% - 30px) / 2);
+        @media screen and (min-width: $bp-tablet) {
 
-        .chef-card {
-
-            display: flex;
-            gap: 30px;
-
-            &__photo {
+            flex-basis: calc((100% - 30px) / 2);
             
-                border-radius: 4px 4px 4px 200px;
+        }
+
+    }
+
+}
+
+.chef-card {
+
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+
+    @media screen and (min-width: $bp-desktop) {
         
-                box-shadow:
+        gap: 30px;
+
+    }
+
+    &__photo {
+
+        width: 140px;
+        border-radius: 4px 4px 4px 200px;
+        box-shadow:
+            -10px 10px 0 0 var(--color-primary-light),
+            -10px 10px 0 2px var(--color-secondary-dark);
+        
+
+        @media screen and (min-width: $bp-desktop) {
+    
+            width: 240px;
+            box-shadow:
                 -16px 16px 0 0 var(--color-primary-light),
                 -16px 16px 0 2px var(--color-secondary-dark);
+
+        }
+
+    }
+
+    &__text {
+
+        p {
+            margin-bottom: 24px;
+
+            &:last-child {
+
+                margin-bottom: 0px;
+
+            }
+        }
+
+    }
+
+    &__name {
+
+        margin-bottom: 16px;
+        font-weight: 600;
+        font-size: 24px;
+
+        @media screen and (min-width: $bp-desktop) {
         
-            }
-
-            &__text {
-
-                p {
-                    margin-bottom: 24px;
-
-                    &:last-child {
-
-                        margin-bottom: 0px;
-
-                    }
-                }
-
-            }
-
-            &__name {
-
-                margin-bottom: 16px;
-                font-weight: 600;
-                font-size: 40px;
-
-            }
-
+            font-size: 40px;
+    
         }
 
     }

@@ -1,19 +1,51 @@
 .hero-section {
 
-    padding: 272px 0;
+    padding: 124px 0;
     background-image: linear-gradient(127deg, rgba(18, 18, 17, 0.78) 0%, rgba(18, 18, 17, 0.6) 63.89%, rgba(18, 18, 17, 0) 100%), url(../img/hero-section-bg.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
 
-    .hero-section__title {
+    @media screen and (min-width: $bp-desktop) {
 
-        color: var(--color-primary-light);
-        font-weight: 900;
-        text-align: center;
-        font-size: 128px;
-        margin-bottom: 0;
+        padding: 272px 0;
 
     }
 
+    @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: dppx) {
+
+        background-image: linear-gradient(127deg, rgba(18, 18, 17, 0.78) 0%, rgba(18, 18, 17, 0.6) 63.89%, rgba(18, 18, 17, 0) 100%), 
+        url(../img/hero-section-bg@2x.jpg);
+        
+    }
+
+    &__title {
+
+        color: var(--color-primary-light);
+        text-align: center;
+        margin-bottom: 48px;
+        font-size: 67px;
+        line-height: 1;
+
+        @media screen and (min-width: $bp-desktop) {
+            
+            font-weight: 900;
+            font-size: 128px;
+            line-height: 1.5;
+            margin-bottom: 0;
+
+        }
+
+    }
+
+    &__button {
+
+        margin: 0 auto;
+
+        @media screen and (min-width: $bp-desktop) {
+        
+            display: none;
+        }
+
+    }
 }

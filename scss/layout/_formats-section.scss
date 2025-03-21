@@ -24,26 +24,17 @@
 
     &__item {
 
-    flex-basis: calc((100% - 40px)/ 3);
-
         .format-card {
         
                 border-radius: 16px;
                 padding: 24px;
                 height: 444px;
                 background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--color-primary-dark) 100%);
-                transition: transform .3s;
                 position: relative;
-        
+                overflow: hidden;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;
-    
-            &:hover {
-    
-                transform: scale(1.05);
-    
-            }
     
             &__title {
     
