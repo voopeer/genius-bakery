@@ -9,6 +9,15 @@
     transform: translateX(100%);
     transition: transform .3s;
 
+    &__author {
+
+        display: flex;
+        margin-top: 150px;
+        text-align: center;
+        justify-content: center;
+
+    }
+
     &.is-open {
 
         transform: translateX(0);

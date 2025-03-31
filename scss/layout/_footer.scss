@@ -8,35 +8,17 @@
     background-size: cover;
     background-repeat: no-repeat;
 
+
     &-nav__section {
 
         margin-bottom: 16px;
 
     }
 
-    &-nav__contact-section {
+    &__logo,
+    &__menu {
 
-        margin-bottom: 0;
-
-    }
-
-    &__nav {
-    
-        flex-basis: 50%;
-        display: flex;
-        gap: 20px;
-
-        ul {
-
-            flex-basis: 50%;
-
-        }
-
-    }
-
-    &__logo {
-
-        flex-basis: 50%;
+        flex-grow: 1;
 
     }
 
@@ -44,19 +26,30 @@
 
         display: flex;
         gap: 20px;
+        flex-direction: column;
+
+        @media screen and (min-width: $bp-tablet) {
+        
+            flex-direction: row;
+    
+        }
     
     }
 
-    &__address {
+    &__address,
+    &__nav {
 
-        flex-basis: 50%;
+        flex-direction: column;
         display: flex;
         gap: 20px;
+        text-align: center; 
 
-        ul {
-
-            flex-basis: 60%;
-
+        @media screen and (min-width: $bp-tablet) {
+        
+            flex-basis: 50%;
+            flex-direction: row;
+            text-align: left;
+    
         }
 
     }
@@ -86,23 +79,27 @@
     &::after {
 
         background-image: url(/img/decor-bread-large.png);
-        width: 380px;
-        height: 190px;
+        width: 275px;
+        height: 180px;
         right: 0;
+
+        @media screen and (min-width: $bp-tablet) {
+        
+            width: 380px;
+            height: 185px;
+            right: 0;
+
+        }
 
     }
 
-}
-
-.address {
-
-    &__copyright {
+    &__address-copyright {
 
         font-size: 14px;
         color: #b9977a;
     }
 
-    &-icon {
+    &__address-icon {
 
         fill: var(--color-primary-light);
         transition: fill .3s;
@@ -115,8 +112,8 @@
 
     }
 
-    &__link {
-    
+    &__address-link {
+
         font-size: 16px;
         font-weight: 300;
         color: var(--color-primary-light);
@@ -124,17 +121,17 @@
         margin-bottom: 16px;
 
         &:hover {
-    
+
             color: var(--color-brand-normal);
-    
+
         }
-    
+
     }
 
-    &__info {
+    &__address-info,
+    &__address-list {
 
-        flex-basis: 50%;
-        text-align: right;
+        flex-grow: 1;
 
     }
 

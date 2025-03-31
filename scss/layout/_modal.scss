@@ -5,7 +5,7 @@
     background-color: var(--color-primary-light);
     border-radius: 32px;
     position: relative;
-    padding: 128px;
+    padding: 48px;
 
     max-height: 880px;
     max-width: 880px;
@@ -13,13 +13,28 @@
     height: 100%;
     overflow-y: auto;
 
+    @media screen and (min-width: $bp-tablet) {
+
+        padding: 128px;
+
+    }
+
+    &__close-btn-icon {
+
+        width: 32px;
+        height: 32px;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+
     &__button {
 
         margin: 0 auto 24px;
 
     }
 
-    &__btn-close {
+    &-close-btn {
 
         position: absolute;
         top: 40px;
@@ -35,10 +50,17 @@
 
     h2 {
 
-        font-weight: 900;
-        font-size: 63px;
+        font-weight: 700;
+        font-size: 53px;
         text-align: center;
         margin-bottom: 0;
+
+        @media screen and (min-width: $bp-tablet) {
+        
+            font-weight: 900;
+            font-size: 63px;
+    
+        }
 
     }
 
