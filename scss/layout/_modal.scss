@@ -20,13 +20,13 @@
     }
 
     &__close-btn-icon {
-
+        
+        cursor: pointer;
         width: 32px;
         height: 32px;
         background-color: transparent;
         border: none;
         padding: 0;
-        cursor: pointer;
     }
 
     &__button {
